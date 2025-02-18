@@ -10,11 +10,11 @@
 [![Source Code](https://img.shields.io/badge/source-gearmagicru/gm--plg--image__album-blue.svg)](https://github.com/gearmagicru/gm-plg-image_album)
 [![Software license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/gearmagicru/gm-plg-image_album/blob/master/LICENSE)
 ![Component type: plugin](https://img.shields.io/badge/component%20type-plugin-green.svg)
-![Component ID: gm.plg.image_album](https://img.shields.io/badge/component%20id-gm.plg.image_album-green.svg)
+![Component ID: gm.plg.image_album](https://img.shields.io/badge/component%20id-gm.plg.image__album-green.svg)
 ![php 8.2+](https://img.shields.io/badge/php-min%208.2-red.svg)
 
 ## Скриншот
-<img src="https://github.com/gearmagicru/gm-plg-image_album/blob/master/assets/help/grid.png?raw=true">
+<img src="https://github.com/gearmagicru/gm-plg-image_album/blob/master/assets/help/items-grid.png?raw=true">
 
 ## Установка
 
