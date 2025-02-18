@@ -1,0 +1,21 @@
+/*!
+ * Настройки (Settings).
+ *
+ * Плагин "Фотоальбом".
+ *
+ * Copyright 2015 Вeб-студия GearMagic
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://gearmagic.ru/license/
+ */
+
+/**
+ * Панель.
+ */
+.gm-plg-image_album__info-tpl { 
+    font-size: 14px;
+    color: #8b8b8b;
+ }
+ .gm-plg-image_album__info-tpl b {
+    color: #4d82b8;
+    font-weight: normal;
+ }
