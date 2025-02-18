@@ -1,0 +1,194 @@
+[
+    {
+        "xtype": "hidden",
+        "name": "pid",
+        "value": "@pluginId"
+    },
+    {
+        "xtype": "tabpanel",
+        "activeTab": "@activeTab",
+        "ui": "flat-light",
+        "anchor": "100% 100%",
+        "autoRender": true,
+        "listeners": {
+            "tabchange": "onTabChange"
+        },
+        "items": [
+            {
+                "title": "#Common",
+                "tabIndex": 1,
+                "bodyPadding": "10",
+                "autoScroll": true,
+                "layout": "anchor",
+                "defaults": {
+                    "labelWidth": 100,
+                    "labelAlign": "right"
+                },
+                "items": [
+                    {
+                        "xtype": "textfield",
+                        "fieldLabel": "#Name",
+                        "name": "name",
+                        "maxLength": 255,
+                        "anchor": "100%",
+                        "allowBlank": false
+                    },
+                    {
+                        "xtype": "textfield",
+                        "fieldLabel": "#Description",
+                        "name": "description",
+                        "maxLength": 255,
+                        "anchor": "100%",
+                        "allowBlank": true
+                    },
+                    {
+                        "xtype": "textfield",
+                        "fieldLabel": "#Author",
+                        "name": "author",
+                        "maxLength": 50,
+                        "width": 400,
+                        "value": "@author",
+                        "allowBlank": true
+                    },
+                    {
+                        "xtype": "checkbox",
+                        "ui": "switch",
+                        "fieldLabel": "#Published",
+                        "checked": true,
+                        "name": "published",
+                        "inputValue": 1
+                    }
+                ]
+            },
+            {
+                "title": "#Options",
+                "bodyPadding": "0",
+                "autoScroll": true,
+                "items": [
+                    {
+                        "xtype": "label",
+                        "ui": "note",
+                        "html": "#Here you specify the size of the images that will be uploaded to the gallery and whether a watermark will be added to the image"
+                    },
+                    {
+                        "xtype": "container",
+                        "padding": 10,
+                        "items": [
+                            {
+                                "xtype": "fieldset",
+                                "title": "#Thumbnail size",
+                                "collapsible": true,
+                                "defaults": {
+                                    "labelWidth": 220,
+                                    "labelAlign": "right"
+                                },
+                                "items": [
+                                    {
+                                        "xtype": "numberfield",
+                                        "fieldLabel": "#Max. width",
+                                        "tooltip": "#Maximum width in pixels",
+                                        "name": "options[thumbWidth]",
+                                        "minValue": 0,
+                                        "value": 150,
+                                        "width": 350,
+                                        "allowBlank": false
+                                    },
+                                    {
+                                        "xtype": "numberfield",
+                                        "fieldLabel": "#Max. height",
+                                        "tooltip": "#Maximum height in pixels",
+                                        "name": "options[thumbHeight]",
+                                        "minValue": 0,
+                                        "value": 150,
+                                        "width": 350,
+                                        "allowBlank": false
+                                    },
+                                    {
+                                        "xtype": "checkbox",
+                                        "ui": "switch",
+                                        "fieldLabel": "#Crop image to size",
+                                        "checked": false,
+                                        "name": "options[thumbCrop]",
+                                        "inputValue": 1
+                                    },
+                                    {
+                                        "xtype": "checkbox",
+                                        "ui": "switch",
+                                        "fieldLabel": "#Add a watermark",
+                                        "checked": false,
+                                        "name": "options[thumbWatermark]",
+                                        "inputValue": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "xtype": "fieldset",
+                                "title": "#Original size",
+                                "collapsible": true,
+                                "defaults": {
+                                    "labelWidth": 220,
+                                    "labelAlign": "right"
+                                },
+                                "items": [
+                                    {
+                                        "xtype": "numberfield",
+                                        "fieldLabel": "#Max. width",
+                                        "tooltip": "#Maximum width in pixels",
+                                        "name": "options[originalWidth]",
+                                        "minValue": 0,
+                                        "value": 1024,
+                                        "width": 350,
+                                        "allowBlank": false
+                                    },
+                                    {
+                                        "xtype": "numberfield",
+                                        "fieldLabel": "#Max. height",
+                                        "tooltip": "#Maximum height in pixels",
+                                        "name": "options[originalHeight]",
+                                        "minValue": 0,
+                                        "value": 1024,
+                                        "width": 350,
+                                        "allowBlank": false
+                                    },
+                                    {
+                                        "xtype": "checkbox",
+                                        "ui": "switch",
+                                        "fieldLabel": "#Crop image to size",
+                                        "checked": false,
+                                        "name": "options[originalCrop]",
+                                        "inputValue": 1
+                                    },
+                                    {
+                                        "xtype": "checkbox",
+                                        "ui": "switch",
+                                        "fieldLabel": "#Add a watermark",
+                                        "checked": false,
+                                        "name": "options[originalWatermark]",
+                                        "inputValue": 1
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uploadTab": true,
+                "title": "#Uploads",
+                "tabIndex": 2,
+                "bodyPadding": "2px",
+                "autoScroll": false,
+                "layout": "anchor",
+                "items": [
+                    {
+                        "xtype": "g-iframe",
+                        "frameWidth": "100%",
+                        "frameHeight": "100%",
+                        "anchor": "100% 100%",
+                        "src": "@uploadUrl"
+                    }
+                ]
+            }
+        ]
+    }
+]

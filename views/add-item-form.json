@@ -1,0 +1,60 @@
+[
+    {
+        "xtype": "container",
+        "layout": "anchor",
+        "padding": 10,
+        "defaults": {
+            "labelAlign": "right",
+            "labelWidth": 120
+        },
+        "items": [
+            {
+                "xtype": "textfield",
+                "fieldLabel": "#Name",
+                "name": "name",
+                "maxLength": 255,
+                "anchor": "100%",
+                "allowBlank": true
+            },
+            {
+                "xtype": "textarea",
+                "fieldLabel": "#Description",
+                "name": "description",
+                "maxLength": 255,
+                "anchor": "100%",
+                "allowBlank": true
+            },
+            {
+                "xtype": "textfield",
+                "fieldLabel": "#Author",
+                "name": "author",
+                "maxLength": 50,
+                "anchor": "100%",
+                "value": "@author",
+                "allowBlank": true
+            },
+            {
+                "xtype": "filefield",
+                "name": "imageFile",
+                "fieldLabel": "#Image",
+                "anchor": "100%",
+                "allowBlank": false
+            },
+            {
+                "xtype": "checkbox",
+                "ui": "switch",
+                "fieldLabel": "#Visible",
+                "checked": true,
+                "name": "visible",
+                "inputValue": 1
+            }
+        ]
+    },
+    {
+        "xtype": "label",
+        "ui": "note",
+        "html": [
+            "#The image album settings will be applied to the uploaded image file"
+        ]
+    }
+]

@@ -1,0 +1,93 @@
+[
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Name",
+        "name": "name",
+        "maxLength": 255,
+        "anchor": "100%",
+        "allowBlank": true
+    },
+    {
+        "xtype": "textarea",
+        "fieldLabel": "#Description",
+        "name": "description",
+        "maxLength": 255,
+        "anchor": "100%",
+        "allowBlank": true
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Author",
+        "name": "author",
+        "maxLength": 50,
+        "anchor": "100%",
+        "value": "@author",
+        "allowBlank": true
+    },
+    {
+        "xtype": "checkbox",
+        "ui": "switch",
+        "fieldLabel": "#Visible",
+        "checked": true,
+        "name": "visible",
+        "inputValue": 1
+    },
+    {
+        "xtype": "fieldset",
+        "title": "#Image",
+        "style": "margin-top:15px",
+        "defaults": {
+            "xtype": "displayfield",
+            "ui": "parameter",
+            "labelWidth": 130,
+            "labelAlign": "right"
+        },
+        "items": [
+            {
+                "name": "itemFilename",
+                "fieldLabel": "#Filename"
+            },
+            {
+                "name": "itemFormat",
+                "fieldLabel": "#Format"
+            },
+            {
+                "name": "itemFilesize",
+                "fieldLabel": "#File size (Mb)"
+            },
+            {
+                "name": "itemSize",
+                "fieldLabel": "#Size (px)"
+            }
+        ]
+    },
+    {
+        "xtype": "fieldset",
+        "title": "#Thumb",
+        "style": "margin-top:15px",
+        "defaults": {
+            "xtype": "displayfield",
+            "ui": "parameter",
+            "labelWidth": 130,
+            "labelAlign": "right"
+        },
+        "items": [
+            {
+                "name": "imgFilename",
+                "fieldLabel": "#Filename"
+            },
+            {
+                "name": "imgFormat",
+                "fieldLabel": "#Format"
+            },
+            {
+                "name": "imgFilesize",
+                "fieldLabel": "#File size (Mb)"
+            },
+            {
+                "name": "imgSize",
+                "fieldLabel": "#Size (px)"
+            }
+        ]
+    }
+]
