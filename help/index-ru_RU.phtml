@@ -1,0 +1,26 @@
+<?php
+/**
+ * Страница "Содержание".
+ * 
+ * Русская локализации.
+ * 
+ * Этот файл является частью виджета веб-приложения GearMagic.
+ * 
+ * @copyright Copyright (c) 2015 Веб-студия GearMagic
+ * @license https://gearmagic.ru/license/
+ */
+?>
+<article>
+    <h1>Плагин "Фотоальбом"</h1>
+    <div class="g-help-icon">
+        <img src="<?= $assetsUrl, '/images/icon.svg' ?>" />
+    </div>
+    <p>Плагин предназначен для управления изображениями фотоальбомов медиагалереи.</p>
+
+    <h2>Содержание:</h2>
+    <ul class="g-help-list">
+        <li><a href="<?= $url('gallery-form') ?>">Форма добавления / редактирования фотоальбома</a></li>
+        <li><a href="<?= $url('item-form') ?>">Форма добавления / редактирования изображения фотоальбома</a></li>
+        <li><a href="<?= $url('items-grid') ?>">Список изображений фотоальбома</a></li>
+    </ul>
+</article>
